@@ -1,3 +1,31 @@
+/* FIX ZMIANY POZYCJI ELEMENTÓW PRZY MODALU */
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+}
+/* KONIEC FIX-a */
+h1,
+h2,
+h3,
+h4,
+.navbar-brand,
+a {
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+nav li a {
+    font-size: 1.5em;
+}
+
 .img-responsive {
     margin: 10px auto;
 }
@@ -11,66 +39,46 @@ section:first-of-type {
     margin-top: 50px;
 }
 
-.navbar {
-    border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background-color: rgb(9, 46, 101);
-    /* fallback */
-    background-color: rgba(9, 46, 101, 0.8);
-}
-
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav>li>a {
-    color: white;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-nav>li:hover>a,
-.navbar-default .navbar-nav>li:focus>a,
-.navbar-default .navbar-brand>a:hover,
-.navbar-default .navbar-brand>a:focus,
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-    color: lightgray;
-}
-
-.jumbotron>h1,
-.jumbotron>h1>small {
-    color: white;
-}
-
-.jumbotron>h1 {
-    display: inline-block;
-    padding: 10px;
-    background-color: rgba(200, 200, 200, 0.5);
-    border-radius: 10px;
-}
-
-.bg {
-    /* The image used */
-    background-image: url("https://mdbootstrap.com/img/Photos/Others/images/91.jpg");
-
-    /* Center and scale the image nicely */
+[class*="example"] {
+    min-height: 400px;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.media img {
-    width: 100px;
-    max-width: 100px;
-    height: auto;
+.example-1 {
+    background-image: url('https://images.pexels.com/photos/39691/family-pier-man-woman-39691.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
-.media .media-body {
-    padding: 10px 10px;
+.example-2 {
+    background-image: url('https://images.pexels.com/photos/130111/pexels-photo-130111.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
+.example-3 {
+    background-image: url('https://images.pexels.com/photos/297755/pexels-photo-297755.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.example-4 {
+    background-image: url('https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.example-5 {
+    background-image: url('https://images.pexels.com/photos/1118448/pexels-photo-1118448.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+/* ALTERNATYWNA WERSJA CENTROWANIA TABÓW */
+.center-tabs {
+    text-align: center;
+  }
+  .center-tabs .nav-tabs > li {
+    float: none;
+  }
+  .center-tabs .nav > li {
+    display: inline-block;
+  }
 
 @media (max-width: 767px) {
     section:first-of-type {
-        margin-top: 330px;
+        margin-top: 185px;
     }
 }
